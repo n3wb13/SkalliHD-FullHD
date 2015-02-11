@@ -1,0 +1,36 @@
+<!-- defaultListScreen -->
+<screen name="defaultList" position="center,center" size="1920,1080" flags="wfNoBorder">
+  <widget source="session.VideoPicture" render="Pig" position="1040,119" zPosition="3" size="800,450" backgroundColor="picture" />
+  <!-- /*Uhr-->
+  <widget backgroundColor="background" font="Regular; 34" halign="center" position="1749,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+    <convert type="ClockToText">Format:%H</convert>
+  </widget>
+  <eLabel backgroundColor="background" font="Regular; 35" halign="center" position="1793,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="Text1" />
+  <widget backgroundColor="background" font="Regular; 34" halign="center" position="1803,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+    <convert type="ClockToText">Format:%M</convert>
+  </widget>
+  <eLabel backgroundColor="background" font="Regular; 25" halign="center" position="1848,20" size="10,25" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="Text1" />
+  <widget backgroundColor="background" font="Regular; 24" halign="center" position="1855,20" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+    <convert type="ClockToText">Format:%S</convert>
+  </widget>
+  <widget backgroundColor="background" font="Regular; 23" foregroundColor="Text1" halign="left" position="1610,30" render="Label" size="140,30" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%d. %B</convert>
+  </widget>
+  <eLabel backgroundColor="background" font="Regular; 18" foregroundColor="Text1" halign="left" noWrap="1" position="1601,35" size="10,25" text=", " transparent="1" valign="top" zPosition="5" />
+  <widget backgroundColor="background" font="Regular; 23" foregroundColor="Text1" halign="right" position="1460,30" render="Label" size="140,30" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <!--Uhr */-->
+  <!-- select screen -->
+  <widget name="ContentTitle" position="20,206" size="900,25" backgroundColor="un26181d20" zPosition="5" foregroundColor="Text1" font="mediaportal;22" halign="center" transparent="1" />
+  <widget name="name" position="1256,621" size="320,100" backgroundColor="un26181d20" transparent="1" zPosition="1" font="mediaportal;24" valign="center" halign="center" foregroundColor="Text1" />
+  <widget name="liste" position="20,245" size="898,500" backgroundColor="un26181d20" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/sel.png" foregroundColorSelected="#ffffff" foregroundColor="darkgrey" />
+  <widget name="coverArt" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/no_coverArt.png" position="1256,744" size="320,200" transparent="1" alphatest="blend" />
+  <widget name="title" position="20,125" size="900,60" foregroundColor="lightblue" backgroundColor="un26181d20" transparent="1" font="mediaportal;26" valign="center" halign="center" />
+  <widget name="handlung" position="20,787" size="895,150" backgroundColor="un26181d20" transparent="1" font="mediaportal;17" valign="top" foregroundColor="Text1" />
+  <widget name="Page" position="1329,581" size="100,25" backgroundColor="un26181d20" transparent="1" foregroundColor="Text1" font="mediaportal;22" zPosition="1" />
+  <widget name="page" position="1404,581" size="100,25" backgroundColor="un26181d20" transparent="1" font="mediaportal;22" foregroundColor="Text1" zPosition="1" />
+  <ePixmap name="new ePixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/BKo.png" position="0,0" size="1920,104" transparent="0" zPosition="-5" />
+<eLabel backgroundColor="Background" font="Regular; 33" position="60,25" size="650,40" text="MediaPortal" transparent="1" foregroundColor="TextInfo" />
+<ePixmap name="new ePixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/BKu.png" position="0,975" size="1920,105" transparent="0" zPosition="-5" />
+</screen>

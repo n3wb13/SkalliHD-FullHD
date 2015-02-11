@@ -1,0 +1,54 @@
+<!-- Radiode -->
+<screen name="Radio.de" position="0,0" size="1920,1080" flags="wfNoBorder">
+  <widget source="session.VideoPicture" render="Pig" position="1041,134" zPosition="3" size="800,450" backgroundColor="picture" />
+  <!-- /*Uhr-->
+  <widget backgroundColor="background" font="Regular; 34" halign="center" position="1749,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+    <convert type="ClockToText">Format:%H</convert>
+  </widget>
+  <eLabel backgroundColor="background" font="Regular; 35" halign="center" position="1793,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="Text1" />
+  <widget backgroundColor="background" font="Regular; 34" halign="center" position="1803,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+    <convert type="ClockToText">Format:%M</convert>
+  </widget>
+  <eLabel backgroundColor="background" font="Regular; 25" halign="center" position="1848,20" size="10,25" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="Text1" />
+  <widget backgroundColor="background" font="Regular; 24" halign="center" position="1855,20" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+    <convert type="ClockToText">Format:%S</convert>
+  </widget>
+  <widget backgroundColor="background" font="Regular; 23" foregroundColor="Text1" halign="left" position="1610,30" render="Label" size="140,30" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%d. %B</convert>
+  </widget>
+  <eLabel backgroundColor="background" font="Regular; 18" foregroundColor="Text1" halign="left" noWrap="1" position="1601,35" size="10,25" text=", " transparent="1" valign="top" zPosition="5" />
+  <widget backgroundColor="background" font="Regular; 23" foregroundColor="Text1" halign="right" position="1460,30" render="Label" size="140,30" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <!--Uhr */-->
+  <!-- select screen -->
+  <widget name="leftContentTitle" position="25,230" size="440,26" backgroundColor="un26181d20" zPosition="0" foregroundColor="Text1" font="mediaportal;22" halign="center" transparent="1" />
+  <widget name="streamlist" position="25,270" size="440,600" backgroundColor="un26181d20" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/sel.png" foregroundColorSelected="#ffffff" />
+  <widget name="rightContentTitle" position="465,230" size="440,26" backgroundColor="un26181d20" zPosition="0" foregroundColor="Text1" font="mediaportal;22" halign="center" transparent="1" />
+  <widget name="playlist" position="465,270" size="440,600" backgroundColor="un26181d20" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/sel.png" foregroundColorSelected="#ffffff" />
+  <widget name="stationIcon" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/no_coverArt.png" position="1256,659" size="320,200" transparent="1" alphatest="blend" />
+  <eLabel text="Play" position="25,115" size="120,25" backgroundColor="un26181d20" transparent="1" foregroundColor="lightblue" font="mediaportal;20" valign="top" />
+  <widget name="stationInfo" position="145,115" size="650,25" backgroundColor="un26181d20" foregroundColor="lightblue" transparent="1" font="mediaportal;20" valign="top" />
+  <widget source="session.CurrentService" render="Label" position="780,115" size="120,25" font="mediaportal;20" foregroundColor="Text1" backgroundColor="un26181d20" halign="right" valign="top" transparent="1">
+    <convert type="ServicePosition">Position</convert>
+  </widget>
+  <eLabel text="Info" position="25,160" size="120,25" backgroundColor="lightyellow" foregroundColor="Text1" transparent="1" font="mediaportal;20" valign="top" />
+  <widget name="stationDesc" position="145,160" zPosition="1" size="765,50" backgroundColor="un26181d20" transparent="1" font="mediaportal;19" halign="left" valign="top" foregroundColor="Text1" />
+  <!-- /*Buttons-->
+  <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/key_red.png" position="55,1055" size="200,5" />
+  <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/key_green.png" position="320,1055" size="200,5" />
+  <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/key_yellow.png" position="585,1055" size="200,5" />
+  <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/key_blue.png" position="855,1055" size="200,5" />
+  <ePixmap name="new ePixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/key_up.png" position="1584,1030" size="24,24" transparent="0" alphatest="blend" />
+  <ePixmap name="new ePixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/key_down.png" position="1474,1030" size="24,24" transparent="0" alphatest="blend" />
+  <eLabel backgroundColor="Background" font="Regular; 18" position="1501,1033" size="80,40" halign="center" text="Channel" transparent="1" foregroundColor="TextInfo" />
+  <widget name="F1" position="61,1015" size="200,40" transparent="1" font="mediaportal; 16" backgroundColor="un26181d20" foregroundColor="Text1" valign="center" halign="left" zPosition="1" />
+  <widget name="F2" position="327,1015" size="200,40" transparent="1" font="mediaportal; 16" backgroundColor="un26181d20" foregroundColor="Text1" valign="center" halign="left" zPosition="1" />
+  <widget name="F3" position="593,1015" size="200,40" transparent="1" font="mediaportal; 16" backgroundColor="un26181d20" foregroundColor="Text1" valign="center" halign="left" zPosition="1" />
+  <widget name="F4" position="864,1015" size="200,40" transparent="1" font="mediaportal; 16" backgroundColor="un26181d20" foregroundColor="Text1" valign="center" halign="left" zPosition="1" />
+  <!--Buttons */-->
+<!--Buttons */-->
+  <ePixmap name="new ePixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/BKu.png" position="0,975" size="1920,105" transparent="0" zPosition="-5" />
+<ePixmap name="new ePixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/BKo.png" position="0,0" size="1920,104" transparent="0" zPosition="-5" />
+<eLabel backgroundColor="Background" font="Regular; 33" position="60,25" size="650,40" text="MediaPortal" transparent="1" foregroundColor="TextInfo" />
+</screen>

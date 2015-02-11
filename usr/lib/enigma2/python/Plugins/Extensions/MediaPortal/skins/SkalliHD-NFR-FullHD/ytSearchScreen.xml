@@ -1,0 +1,68 @@
+<!-- ytSearchScreen -->
+<screen name="ytSearch" position="0,-2" size="1920,1080" flags="wfNoBorder">
+  <widget source="session.VideoPicture" render="Pig" position="1041,134" zPosition="3" size="800,450" backgroundColor="picture" />
+  <!-- /*Uhr-->
+  <widget backgroundColor="background" font="Regular; 34" halign="center" position="1749,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+    <convert type="ClockToText">Format:%H</convert>
+  </widget>
+  <eLabel backgroundColor="background" font="Regular; 35" halign="center" position="1793,18" size="15,40" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="Text1" />
+  <widget backgroundColor="background" font="Regular; 34" halign="center" position="1803,18" render="Label" size="50,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+    <convert type="ClockToText">Format:%M</convert>
+  </widget>
+  <eLabel backgroundColor="background" font="Regular; 25" halign="center" position="1848,20" size="10,25" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="Text1" />
+  <widget backgroundColor="background" font="Regular; 24" halign="center" position="1855,20" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+    <convert type="ClockToText">Format:%S</convert>
+  </widget>
+  <widget backgroundColor="background" font="Regular; 23" foregroundColor="Text1" halign="left" position="1610,30" render="Label" size="140,30" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%d. %B</convert>
+  </widget>
+  <eLabel backgroundColor="background" font="Regular; 18" foregroundColor="Text1" halign="left" noWrap="1" position="1601,35" size="10,25" text=", " transparent="1" valign="top" zPosition="5" />
+  <widget backgroundColor="background" font="Regular; 23" foregroundColor="Text1" halign="right" position="1460,30" render="Label" size="140,30" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <!--Uhr */-->
+  <!-- /*Buttons-->
+  <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/key_red.png" position="55,1055" size="200,5" />
+  <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/key_green.png" position="320,1055" size="200,5" />
+  <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/key_yellow.png" position="585,1055" size="200,5" />
+  <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/key_blue.png" position="855,1055" size="200,5" />
+  <widget name="F1" position="61,1015" size="200,40" transparent="1" font="mediaportal; 16" backgroundColor="un26181d20" foregroundColor="Text1" valign="center" halign="left" zPosition="1" />
+  <widget name="F2" position="327,1015" size="200,40" transparent="1" font="mediaportal; 16" backgroundColor="un26181d20" foregroundColor="Text1" valign="center" halign="left" zPosition="1" />
+  <widget name="F3" position="593,1015" size="200,40" transparent="1" font="mediaportal; 16" backgroundColor="un26181d20" foregroundColor="Text1" valign="center" halign="left" zPosition="1" />
+  <widget name="F4" position="864,1015" size="200,40" transparent="1" font="mediaportal; 16" backgroundColor="un26181d20" foregroundColor="Text1" valign="center" halign="left" zPosition="1" />
+  <!--Buttons */-->
+  <!-- select screen -->
+  <widget name="ContentTitle" position="20,188" size="900,25" backgroundColor="un26181d20" zPosition="5" foregroundColor="Text1" font="mediaportal;22" halign="center" transparent="1" />
+  <widget name="name" position="1254,693" size="328,60" backgroundColor="un26181d20" transparent="1" zPosition="1" font="mediaportal;24" valign="center" halign="center" foregroundColor="Text1" />
+  <widget name="liste" position="20,229" size="898,300" backgroundColor="un26181d20" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/sel.png" foregroundColorSelected="#ffffff" foregroundColor="darkgrey" />
+  <widget name="title" position="20,125" size="900,50" foregroundColor="lightblue" backgroundColor="un26181d20" transparent="1" font="mediaportal;26" valign="center" halign="center" />
+  <widget name="Parameter" position="55,556" size="150,30" foregroundColor="darkgrey" backgroundColor="un26181d20" transparent="1" font="mediaportal; 26" valign="center" halign="center" zPosition="0" />
+  <widget name="ParameterToEdit" position="220,556" size="120,30" foregroundColor="Text1" backgroundColor="un26181d20" transparent="1" font="mediaportal; 26" valign="center" zPosition="0" halign="left" />
+  <widget name="parametertoedit" position="340,556" size="200,30" backgroundColor="un26181d20" transparent="1" font="mediaportal;26" valign="center" zPosition="0" />
+  <widget name="Query" position="55,615" size="150,25" backgroundColor="un26181d20" transparent="1" font="mediaportal; 20" valign="center" zPosition="0" halign="center" foregroundColor="darkgrey" />
+  <widget name="query" position="220,615" size="690,25" backgroundColor="un26181d20" transparent="1" font="mediaportal;20" valign="center" zPosition="0" noWrap="1" />
+  <widget name="Keywords" position="55,650" size="150,25" backgroundColor="un26181d20" transparent="1" font="mediaportal;20" valign="center" zPosition="0" halign="center" foregroundColor="darkgrey" />
+  <widget name="keywords" position="220,650" size="690,25" backgroundColor="un26181d20" transparent="1" font="mediaportal;20" valign="center" zPosition="0" noWrap="1" />
+  <widget name="Time" position="55,685" size="150,25" backgroundColor="un26181d20" transparent="1" foregroundColor="darkgrey" font="mediaportal;20" valign="center" halign="center" zPosition="0" />
+  <widget name="time" position="220,685" size="200,25" backgroundColor="un26181d20" transparent="1" font="mediaportal;20" valign="center" halign="left" zPosition="0" />
+  <widget name="Metalang" position="55,720" size="150,25" backgroundColor="un26181d20" transparent="1" font="mediaportal;20" valign="center" halign="center" zPosition="0" foregroundColor="darkgrey" />
+  <widget name="metalang" position="220,720" size="200,25" backgroundColor="un26181d20" transparent="1" font="mediaportal;20" valign="center" halign="left" zPosition="0" />
+  <widget name="Regionid" position="55,755" size="150,25" backgroundColor="un26181d20" transparent="1" font="mediaportal;20" valign="center" halign="center" zPosition="0" foregroundColor="darkgrey" />
+  <widget name="regionid" position="220,754" size="200,25" backgroundColor="un26181d20" transparent="1" font="mediaportal;20" valign="center" halign="left" zPosition="0" />
+  <widget name="Author" position="55,790" size="150,25" backgroundColor="un26181d20" transparent="1" font="mediaportal;20" valign="center" halign="center" zPosition="0" foregroundColor="darkgrey" />
+  <widget name="author" position="220,790" size="200,25" backgroundColor="un26181d20" transparent="1" font="mediaportal;20" valign="center" halign="left" zPosition="0" />
+  <widget name="3D" position="450,685" size="150,25" backgroundColor="un101214" transparent="1" font="mediaportal;20" valign="center" halign="right" zPosition="0" foregroundColor="un555556" />
+  <widget name="3d" position="615,685" size="200,25" backgroundColor="un101214" transparent="1" font="mediaportal;20" valign="center" halign="left" zPosition="0" />
+  <widget name="Duration" position="450,720" size="150,25" backgroundColor="un101214" transparent="1" font="mediaportal;20" valign="center" halign="right" zPosition="0" foregroundColor="un555556" />
+  <widget name="duration" position="615,720" size="200,25" backgroundColor="un101214" transparent="1" font="mediaportal;20" valign="center" halign="left" zPosition="0" />
+  <widget name="Reserve1" position="450,755" size="150,25" backgroundColor="un101214" transparent="1" font="mediaportal;20" valign="center" halign="right" zPosition="0" foregroundColor="un555556" />
+  <widget name="reserve1" position="615,755" size="200,25" backgroundColor="un101214" transparent="1" font="mediaportal;20" valign="center" halign="left" zPosition="0" />
+  <widget name="Reserve2" position="450,790" size="150,25" backgroundColor="un101214" transparent="1" font="mediaportal;20" valign="center" halign="right" zPosition="0" foregroundColor="un555556" />
+  <widget name="reserve2" position="615,790" size="200,25" backgroundColor="un101214" transparent="1" font="mediaportal;20" valign="center" halign="left" zPosition="0" />
+  <eLabel position="55,456" size="150,0" backgroundColor="darkgrey" zPosition="0" foregroundColor="darkgrey" />
+  <eLabel position="75,486" size="150,0" backgroundColor="darkgrey" zPosition="0" foregroundColor="darkgrey" />
+  <eLabel position="206,455" size="0,30" backgroundColor="darkgrey" zPosition="0" foregroundColor="darkgrey" />
+  <ePixmap name="new ePixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/BKu.png" position="0,975" size="1920,105" transparent="0" zPosition="-5" />
+<ePixmap name="new ePixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/SkalliHD-NFR-FullHD/images/BKo.png" position="0,0" size="1920,104" transparent="0" zPosition="-5" />
+<eLabel backgroundColor="Background" font="Regular; 33" position="60,25" size="650,40" text="MediaPortal" transparent="1" foregroundColor="TextInfo" />
+</screen>
