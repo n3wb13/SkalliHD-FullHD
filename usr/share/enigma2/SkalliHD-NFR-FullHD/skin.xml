@@ -16661,13 +16661,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
         <!-- City -->
         <widget name="lab2" position="290,140" halign="left" size="500,90" zPosition="1" font="Regular;45" valign="center" foregroundColor="lightblue" backgroundColor="background" transparent="1" />
         <!-- Temperature -->
-        <ePixmap position="590,370" size="17,50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/YahooWeather/Skin/temp.png" alphatest="blend" transparent="1" />
+        <ePixmap position="590,370" size="17,50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/Skin/temp.png" alphatest="blend" transparent="1" />
         <widget name="lab4" position="590,370" halign="right" size="92,77" zPosition="1" font="Regular;50" foregroundColor="white" backgroundColor="black" valign="top" transparent="1" />
         <widget name="lab4b" position="690,370" halign="left" size="240,50" zPosition="1" font="Regular;22" foregroundColor="red" backgroundColor="black" valign="top" transparent="1" />
         <!-- Description Time -->
         <widget name="lab6" position="700,395" halign="center" size="320,65" zPosition="1" font="Regular;28" valign="top" foregroundColor="yellow" backgroundColor="black" transparent="1" />
         <!-- Wind -->
-        <ePixmap position="590,500" size="30,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/YahooWeather/Skin/wind.png" alphatest="blend" transparent="1" />
+        <ePixmap position="590,500" size="30,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/Skin/wind.png" alphatest="blend" transparent="1" />
         <widget name="lab12b" position="635,500" halign="left" size="410,70" zPosition="1" font="Regular;28" foregroundColor="yellow" backgroundColor="black" valign="top" transparent="1" />
         <!-- Humidity -->
         <widget name="lab7" position="25,350" halign="left" size="200,32" zPosition="1" font="Regular;28" valign="top" foregroundColor="un8f8f8f" backgroundColor="black" transparent="1" />
@@ -16689,7 +16689,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
         <!-- Data Forecast-->
         <widget name="5day" position="100,600" size="550,40" zPosition="1" font="Regular;32" foregroundColor="Text1" backgroundColor="black" halign="center" valign="top" transparent="1" />
         <!-- ForeCast 1Day Pic -->
-        <widget name="lab17" position="10,680" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
+        <widget name="lab17" position="10,680" size="100,100" zPosition="1" alphatest="blend" transparent="1" />
         <!-- ForeCast 1Day Day -->
         <widget name="lab13" position="115,680" halign="left" size="300,35" zPosition="1" font="Regular;30" foregroundColor="yellow" backgroundColor="black" transparent="1" />
         <!-- ForeCast 1Day Description -->
@@ -16704,7 +16704,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
         <!-- ForeCast 1Day Date -->
         <widget name="daydate0" position="415,680" valign="center" halign="right" size="150,35" zPosition="1" font="Regular;25" foregroundColor="un8f8f8f" backgroundColor="black" transparent="1" />
         <!-- ForeCast 2Day Pic -->
-        <widget name="lab22" position="330,835" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
+        <widget name="lab22" position="330,835" size="100,100" zPosition="1" alphatest="blend" transparent="1" />
         <!-- ForeCast 2Day Day -->
         <widget name="lab18" position="435,835" halign="left" size="300,35" zPosition="1" font="Regular;30" foregroundColor="yellow" backgroundColor="black" transparent="1" />
         <!-- ForeCast 2Day Description -->
@@ -16718,7 +16718,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
         <!-- ForeCast 2Day Date -->
         <widget name="daydate1" position="735,835" valign="center" halign="right" size="150,35" zPosition="1" font="Regular;25" foregroundColor="un8f8f8f" backgroundColor="black" transparent="1" />
         <!-- ForeCast 3Day Pic -->
-        <widget name="3lab22" position="685,680" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
+        <widget name="3lab22" position="685,680" size="100,100" zPosition="1" alphatest="blend" transparent="1" />
         <!-- ForeCast 3Day Day -->
         <widget name="3lab18" position="790,680" halign="left" size="300,35" zPosition="1" font="Regular;30" foregroundColor="yellow" backgroundColor="black" transparent="1" />
         <!-- ForeCast 3Day Description -->
@@ -16732,7 +16732,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
         <!-- ForeCast 3Day Date -->
         <widget name="daydate2" position="1090,680" valign="center" halign="right" size="150,35" zPosition="1" font="Regular;25" foregroundColor="un8f8f8f" backgroundColor="black" transparent="1" />
         <!-- ForeCast 4Day Pic -->
-        <widget name="4lab22" position="1018,835" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
+        <widget name="4lab22" position="1018,835" size="100,100" zPosition="1" alphatest="blend" transparent="1" />
         <!-- ForeCast 4Day Day -->
         <widget name="4lab18" position="1125,835" halign="left" size="300,35" zPosition="1" font="Regular;30" foregroundColor="yellow" backgroundColor="black" transparent="1" />
         <!-- ForeCast 4Day Description -->
@@ -16746,7 +16746,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
         <!-- ForeCast 4Day Date -->
         <widget name="daydate3" position="1425,835" valign="center" halign="right" size="150,35" zPosition="1" font="Regular;25" foregroundColor="un8f8f8f" backgroundColor="black" transparent="1" />
         <!-- ForeCast 5Day Pic -->
-        <widget name="5lab22" position="1360,680" size="80,80" zPosition="1" alphatest="blend" transparent="1" />
+        <widget name="5lab22" position="1360,680" size="100,100" zPosition="1" alphatest="blend" transparent="1" />
         <!-- ForeCast 5Day Day -->
         <widget name="5lab18" position="1465,680" halign="left" size="300,35" zPosition="1" font="Regular;30" foregroundColor="yellow" backgroundColor="black" transparent="1" />
         <!-- ForeCast 5Day Description -->
@@ -16771,9 +16771,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
         <widget name="lab26b" position="405,245" halign="left" size="330,30" zPosition="1" font="Regular;26" foregroundColor="white" backgroundColor="black" transparent="1" />
         <!-- Country -->
         <widget name="lab27" position="290,285" halign="left" size="430,30" zPosition="1" font="Regular;26" foregroundColor="white" backgroundColor="black" transparent="1" />
-        <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/YahooWeather/Skin/yh.png" position="1830,1025" size="51,30" alphatest="blend" transparent="1" />
+        <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/Skin/yh.png" position="1830,1025" size="51,30" alphatest="blend" transparent="1" />
     </screen>
-    <screen backgroundColor="transparent" flags="wfNoBorder" name="YahooWeatherList" position="0,0" size="1920,1080" title="Yahoo Weather list">
+    <screen backgroundColor="transparent" flags="wfNoBorder" name="BMediaCenterList" position="0,0" size="1920,1080" title="Yahoo Weather list">
         <eLabel backgroundColor="black" foregroundColor="Text1" name="" position="0,0" size="1920,1080" zPosition="-10" />
         <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
         <widget font="Regular; 42" position="60,25" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="left" backgroundColor="background" foregroundColor="TextInfo" />
