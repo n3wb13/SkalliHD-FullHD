@@ -10282,21 +10282,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
   </screen>
   <screen name="HistoryZapSelector" position="0,100" size="1920,1080" title="History Zap" flags="wfNoBorder" backgroundColor="transparent">
     <widget source="Title" render="Label" font="Regular; 35" position="center,60" size="400,43" transparent="0" halign="center" valign="center" zPosition="1" foregroundColor="Text1" backgroundColor="background" />
-    <widget source="menu" render="Listbox" position="center,124" size="950,550" scrollbarMode="showAlways" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" backgroundColor="background" transparent="0" zPosition="0">
+    <widget source="menu" render="Listbox" position="center,125" size="1240,600" scrollbarMode="showAlways" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" backgroundColor="background" transparent="0" zPosition="0">
       <convert type="TemplatedMultiContent">{"template": [
 						MultiContentEntryText(pos = (120, 5), size = (300, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x00ffffff),
-                                                MultiContentEntryText(pos = (120, 35), size = (300, 28), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00bbbbbb, color_sel = 0x00ffffff),
+                                                MultiContentEntryText(pos = (120, 38), size = (300, 28), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00bbbbbb, color_sel = 0x00ffffff),
                                                 MultiContentEntryText(pos = (105, 17), size = (10, 20), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (430, 5), size = (600, 30), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffffff, color_sel = 0x00ffffff),
-						MultiContentEntryText(pos = (430, 35), size = (550, 28), font = 3, flags = RT_HALIGN_LEFT, text = 4, color = 0x00bbbbbb, color_sel = 0x00ffffff),
-						MultiContentEntryPixmapAlphaBlend(pos=(2, 5), size=(100, 60), png=6, flags = BT_SCALE)
+						MultiContentEntryText(pos = (430, 1), size = (800, 30), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffffff, color_sel = 0x00ffffff),
+						MultiContentEntryText(pos = (430, 29), size = (800, 46), font = 3, flags = RT_HALIGN_LEFT, text = 4, color = 0x00bbbbbb, color_sel = 0x00ffffff),
+						MultiContentEntryPixmapAlphaBlend(pos=(2, 7), size=(100, 60), png=6, flags = BT_SCALE)
 					],
-				 "fonts": [gFont("Regular", 28), gFont("Regular", 26), gFont("Regular", 24), gFont("Regular", 20)],
-				 "itemHeight": 70
+				 "fonts": [gFont("Regular", 30), gFont("Regular", 26), gFont("Regular", 23), gFont("Regular", 20)],
+				 "itemHeight": 75
 				}</convert>
     </widget>
-    <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/extensions/Border950.png" position="center,116" size="950,8" zPosition="1" />
-    <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/extensions/Border950.png" position="center,674" size="950,8" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/extensions/Border1240.png" position="center,117" size="1240,8" zPosition="1" />
+    <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/extensions/Border1240.png" position="center,725" size="1240,8" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/extensions/Border400.png" position="center,52" size="400,8" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/extensions/Border400.png" position="center,102" size="400,8" zPosition="1" />
   </screen>
