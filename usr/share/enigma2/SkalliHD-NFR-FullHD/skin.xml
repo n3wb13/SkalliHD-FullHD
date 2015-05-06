@@ -17026,4 +17026,96 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     <widget backgroundColor="background" font="Regular; 30" halign="left" render="Label" source="key_blue" position="915,1020" size="240,35" transparent="1" zPosition="1" valign="top" />
     <!--Buttons */-->
   </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="Disk_Speed" position="0,0" size="1920,1080" title="Disk Speed Test">
+    <eLabel backgroundColor="black" foregroundColor="Text1" name="" position="0,0" size="1920,1080" zPosition="-10" />
+    <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
+    <widget font="Regular; 42" position="60,25" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="left" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget enableWrapAround="1" position="20,125" name="label1" halign="center" itemHeight="35" font="Regular;36" foregroundColor="lightblue" size="900,50" transparent="1" />
+    <widget enableWrapAround="1" position="20,250" name="label2" halign="center" itemHeight="35" font="Regular;30" size="900,120" transparent="1" />
+    <!-- /*Uhr-->
+    <widget backgroundColor="background" font="Regular; 36" halign="center" position="1739,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 36" halign="center" position="1788,18" size="15,40" text=":" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1" />
+    <widget backgroundColor="background" font="Regular; 36" halign="center" position="1793,19" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 25" halign="center" position="1848,20" size="10,25" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="Text1" />
+    <widget backgroundColor="background" font="Regular; 24" halign="center" position="1855,20" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget>
+    <widget backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="left" position="1545,25" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%d. %B</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="left" noWrap="1" position="1536,25" size="10,40" text=", " transparent="1" valign="top" zPosition="5" />
+    <widget backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="right" position="1330,25" render="Label" size="200,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <!--Uhr */-->
+    <widget position="20,420" name="config" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="900,540" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1" />
+    <!--TV-Bild mit Rahmen groß */-->
+    <widget source="session.VideoPicture" render="Pig" position="1040,180" zPosition="3" size="800,450" backgroundColor="picture" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,175" size="800, 2" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,633" size="800, 2" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line4.png" position="1035,180" size="2, 450" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line4.png" position="1842,180" size="2, 450" />
+    <!-- /*TV-Bild mit Rahmen groß-->
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line8.png" position="120,398" size="700, 2" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line8.png" position="120,218" size="700, 2" />
+    <!-- /*Buttons-->
+    <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_red.png" position="20,1020" size="35,35" />
+    <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_green.png" position="306,1020" size="35,35" />
+    <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_blue.png" position="590,1020" size="35,35" />
+    <widget backgroundColor="background" font="Regular; 30" halign="left" render="Label" source="key_red" position="60,1020" size="240,35" transparent="1" zPosition="1" valign="top" />
+    <widget backgroundColor="background" font="Regular; 30" halign="left" render="Label" source="key_green" position="345,1020" size="240,35" transparent="1" zPosition="1" valign="top" />
+    <widget backgroundColor="background" font="Regular; 30" halign="left" render="Label" source="key_blue" position="630,1020" size="240,35" transparent="1" zPosition="1" valign="top" />
+    <!--Buttons */-->
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="Disk_Test" position="0,0" size="1920,1080" title="Disk Speed Test">
+    <eLabel backgroundColor="black" foregroundColor="Text1" name="" position="0,0" size="1920,1080" zPosition="-10" />
+    <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
+    <widget font="Regular; 42" position="60,25" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="left" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget enableWrapAround="1" position="20,125" name="label1" halign="center" itemHeight="35" font="Regular;36" foregroundColor="lightblue" size="900,50" transparent="1" />
+    <widget enableWrapAround="1" position="20,250" name="label2" halign="center" itemHeight="35" font="Regular;30" size="900,120" transparent="1" />
+    <!-- /*Uhr-->
+    <widget backgroundColor="background" font="Regular; 36" halign="center" position="1739,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 36" halign="center" position="1788,18" size="15,40" text=":" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1" />
+    <widget backgroundColor="background" font="Regular; 36" halign="center" position="1793,19" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 25" halign="center" position="1848,20" size="10,25" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="Text1" />
+    <widget backgroundColor="background" font="Regular; 24" halign="center" position="1855,20" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget>
+    <widget backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="left" position="1545,25" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%d. %B</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="left" noWrap="1" position="1536,25" size="10,40" text=", " transparent="1" valign="top" zPosition="5" />
+    <widget backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="right" position="1330,25" render="Label" size="200,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <!--Uhr */-->
+    <ePixmap pixmap="SkalliHD-NFR-FullHD/icons/disk_speed1.png" position="100,790" size="1720,50" transparent="0" zPosition="-5" />
+    <widget pixmap="SkalliHD-NFR-FullHD/icons/disk_speed1.png" position="20,700" size="900,30" transparent="0" zPosition="-5" />
+    <!--TV-Bild mit Rahmen groß */-->
+    <widget source="session.VideoPicture" render="Pig" position="1040,180" zPosition="3" size="800,450" backgroundColor="picture" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,175" size="800, 2" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,633" size="800, 2" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line4.png" position="1035,180" size="2, 450" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line4.png" position="1842,180" size="2, 450" />
+    <!-- /*TV-Bild mit Rahmen groß-->
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line8.png" position="120,398" size="700, 2" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line8.png" position="120,218" size="700, 2" />
+    <!-- /*Buttons-->
+    <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_red.png" position="20,1020" size="35,35" />
+    <widget backgroundColor="background" font="Regular; 30" halign="left" render="Label" source="key_red" position="60,1020" size="240,35" transparent="1" zPosition="1" valign="top" />
+    <!--Buttons */-->
+    <eLabel name="spaceused" text=" 1 SD" position="60,755" size="100,30" font="Regular; 26" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
+    <eLabel name="spaceused1" text=" 1 HD" position="130,755" size="100,30" font="Regular; 26" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
+    <eLabel name="spaceused2" text=" 2 HD" position="205,755" size="100,30" font="Regular; 26" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
+    <eLabel name="spaceused3" text=" More then 2 HD" position="815,755" size="220,30" font="Regular; 26" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
+    <widget name="spaceused" position="100,875" size="1720,40" foregroundColor="lightblue" backgroundColor="Text1" zPosition="3" />
+  </screen>
 </skin>
