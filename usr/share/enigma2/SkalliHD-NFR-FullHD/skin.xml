@@ -17126,4 +17126,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     <eLabel name="spaceused3" text=" More then 2 HD" position="815,755" size="220,30" font="Regular; 26" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="100,875" size="1720,40" foregroundColor="lightblue" backgroundColor="Text1" zPosition="3" />
   </screen>
+  <screen name="QuitMainloopScreen" flags="wfNoBorder" position="0,0" size="1920,1080" backgroundColor="transparent">
+    <ePixmap pixmap="SkalliHD-NFR-FullHD/Cover.png" position="0,0" size="1920,1080" alphatest="blend" zPosition="-1" />
+    <widget name="text" position="0,918" size="1920,160" font="Regular;35" foregroundColor="white" transparent="1" halign="center" backgroundColor="black" />
+  </screen>
 </skin>
