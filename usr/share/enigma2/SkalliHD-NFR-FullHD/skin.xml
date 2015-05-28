@@ -17134,7 +17134,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
   </screen>
   <screen backgroundColor="background" flags="wfNoBorder" name="BootlogoSetupScreen" position="0,0" size="1920,1080" title="Info Panel" transparent="0">
     <widget source="Title" render="Label" backgroundColor="background" foregroundColor="TextInfo" font="Regular; 42" halign="left" position="60,25" size="850,50" transparent="1" valign="top" zPosition="1" />
-    <widget name="Mlist" position="25,125" size="900,700" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" />
+    <widget name="Mlist" position="25,125" size="900,700" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x92.png" />
     <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
     <!-- /*Uhr-->
     <widget backgroundColor="background" font="Regular; 36" halign="center" position="1739,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
@@ -17167,7 +17167,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
   </screen>
   <screen backgroundColor="background" flags="wfNoBorder" name="RadiologoSetupScreen" position="0,0" size="1920,1080" title="Info Panel" transparent="0">
     <widget source="Title" render="Label" backgroundColor="background" foregroundColor="TextInfo" font="Regular; 42" halign="left" position="60,25" size="850,50" transparent="1" valign="top" zPosition="1" />
-    <widget name="Mlist" position="25,125" size="900,700" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" />
+    <widget name="Mlist" position="25,125" size="900,700" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x92.png" />
     <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
     <!-- /*Uhr-->
     <widget backgroundColor="background" font="Regular; 36" halign="center" position="1739,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
