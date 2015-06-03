@@ -2855,7 +2855,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     </widget>
     <!--Uhr */-->
     <eLabel backgroundColor="Background" font="Regular; 42" position="60,25" size="850,50" text="Plugin browser" transparent="1" valign="top" zPosition="1" halign="left" foregroundColor="TextInfo" />
-    <widget backgroundColor="Background" enableWrapAround="1" name="list" position="20,116" scrollbarMode="showOnDemand" size="850,720" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1" />
+    <widget backgroundColor="background" enableWrapAround="1" name="list" position="20,116" scrollbarMode="showOnDemand" size="850,720" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1" />
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_red.png" position="20,1020" size="35,35" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_green.png" position="306,1020" size="35,35" />
@@ -2899,8 +2899,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     </widget>
     <!--Uhr */-->
     <widget backgroundColor="Background" font="Regular; 42" position="60,25" render="Label" size="850,50" source="Title" transparent="1" foregroundColor="TextInfo" valign="top" />
-    <widget backgroundColor="Background" name="list" position="20,126" scrollbarMode="showOnDemand" size="900,840" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1" zPosition="4" />
-    <widget font="Regular; 32" foregroundColor="lightblue" halign="center" name="text" position="1192,686" size="500, 200" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="background" name="list" position="20,125" scrollbarMode="showOnDemand" size="900,840" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1" zPosition="4" />
+    <widget backgroundColor="background" font="Regular; 32" foregroundColor="lightblue" halign="center" name="text" position="1192,686" size="500, 200" transparent="1" valign="center" zPosition="1" />
     <!--TV-Bild mit Rahmen groß */-->
     <widget source="session.VideoPicture" render="Pig" position="1040,180" zPosition="3" size="800,450" backgroundColor="picture" />
     <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,175" size="800, 2" />
@@ -11269,19 +11269,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
       <convert type="ClockToText">Format:%A</convert>
     </widget>
     <!--Uhr */-->
-    <widget name="filelist" position="65,125" font="Regular; 26" itemHeight="30" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarMode="showOnDemand" size="800,690" zPosition="4" transparent="1" />
+    <widget name="filelist" position="65,125" font="Regular; 26" itemHeight="30" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarMode="showOnDemand" size="800,690" zPosition="4" transparent="1" backgroundColor="background" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_red.png" position="20,1020" size="35,35" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_green.png" position="306,1020" size="35,35" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_yellow.png" position="590,1020" size="35,35" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_blue.png" position="875,1020" size="35,35" />
-    <eLabel font="Regular;30" halign="left" position="60,1020" size="240,35" text="Delete" transparent="1" valign="top" zPosition="1" />
-    <eLabel font="Regular;30" halign="left" position="345,1020" size="240,35" text="Rename" transparent="1" valign="top" zPosition="1" />
-    <eLabel font="Regular;30" halign="left" position="630,1020" size="240,35" text="Move/Copy" transparent="1" valign="top" zPosition="1" />
-    <eLabel font="Regular;30" halign="left" position="915,1020" size="240,35" text="Bookmarks" transparent="1" valign="top" zPosition="1" />
+    <eLabel backgroundColor="background" font="Regular;30" halign="left" position="60,1020" size="240,35" text="Delete" transparent="1" valign="top" zPosition="1" />
+    <eLabel backgroundColor="background" font="Regular;30" halign="left" position="345,1020" size="240,35" text="Rename" transparent="1" valign="top" zPosition="1" />
+    <eLabel backgroundColor="background" font="Regular;30" halign="left" position="630,1020" size="240,35" text="Move/Copy" transparent="1" valign="top" zPosition="1" />
+    <eLabel backgroundColor="background" font="Regular;30" halign="left" position="915,1020" size="240,35" text="Bookmarks" transparent="1" valign="top" zPosition="1" />
     <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/buttons/info.png" position="1564,1020" size="100,35" transparent="0" alphatest="blend" />
-    <eLabel font="Regular;30" halign="left" position="1321,1020" size="240,35" text="Options" transparent="1" valign="top" zPosition="1" />
+    <eLabel backgroundColor="background" font="Regular;30" halign="left" position="1321,1020" size="240,35" text="Options" transparent="1" valign="top" zPosition="1" />
     <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/buttons/menu.png" position="1218,1020" size="100,35" alphatest="blend" transparent="0" />
-    <eLabel font="Regular;30" halign="left" position="1666,1020" size="240,35" text="Info" transparent="1" valign="top" zPosition="1" />
+    <eLabel backgroundColor="background" font="Regular;30" halign="left" position="1666,1020" size="240,35" text="Info" transparent="1" valign="top" zPosition="1" />
     <!--Buttons */-->
     <!--TV-Bild mit Rahmen groß */-->
     <widget source="session.VideoPicture" render="Pig" position="1040,180" zPosition="3" size="800,450" backgroundColor="picture" />
@@ -17038,8 +17038,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     <eLabel backgroundColor="black" foregroundColor="Text1" name="" position="0,0" size="1920,1080" zPosition="-10" />
     <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
     <widget font="Regular; 42" position="60,25" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="left" backgroundColor="background" foregroundColor="TextInfo" />
-    <widget enableWrapAround="1" position="20,125" name="label1" halign="center" itemHeight="35" font="Regular;36" foregroundColor="lightblue" size="900,100" transparent="1" />
-    <widget enableWrapAround="1" position="20,260" name="label2" halign="center" itemHeight="35" font="Regular;30" size="900,150" transparent="1" />
+    <widget enableWrapAround="1" position="20,125" name="label1" halign="center" itemHeight="35" font="Regular;36" foregroundColor="lightblue" backgroundColor="background" size="900,100" transparent="1" />
+    <widget enableWrapAround="1" position="20,260" name="label2" halign="center" itemHeight="35" font="Regular;30" size="900,150" transparent="1" backgroundColor="background" />
     <!-- /*Uhr-->
     <widget backgroundColor="background" font="Regular; 36" halign="center" position="1739,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
       <convert type="ClockToText">Format:%H</convert>
@@ -17060,7 +17060,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
       <convert type="ClockToText">Format:%A</convert>
     </widget>
     <!--Uhr */-->
-    <widget position="20,460" name="config" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="900,500" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1" />
+    <widget position="20,460" name="config" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="900,500" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1" backgroundColor="background" />
     <!--TV-Bild mit Rahmen groß */-->
     <widget source="session.VideoPicture" render="Pig" position="1040,180" zPosition="3" size="800,450" backgroundColor="picture" />
     <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,175" size="800, 2" />
@@ -17083,8 +17083,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     <eLabel backgroundColor="black" foregroundColor="Text1" name="" position="0,0" size="1920,1080" zPosition="-10" />
     <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
     <widget font="Regular; 42" position="60,25" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="left" backgroundColor="background" foregroundColor="TextInfo" />
-    <widget enableWrapAround="1" position="20,125" name="label1" halign="center" itemHeight="35" font="Regular;36" foregroundColor="lightblue" size="900,50" transparent="1" />
-    <widget enableWrapAround="1" position="20,250" name="label2" halign="center" itemHeight="35" font="Regular;30" size="900,120" transparent="1" />
+    <widget enableWrapAround="1" position="20,125" name="label1" halign="center" itemHeight="35" font="Regular;36" foregroundColor="lightblue" size="900,50" transparent="1" backgroundColor="background" />
+    <widget enableWrapAround="1" position="20,250" name="label2" halign="center" itemHeight="35" font="Regular;30" size="900,120" transparent="1" backgroundColor="background" />
     <!-- /*Uhr-->
     <widget backgroundColor="background" font="Regular; 36" halign="center" position="1739,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
       <convert type="ClockToText">Format:%H</convert>
@@ -17134,7 +17134,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
   </screen>
   <screen backgroundColor="background" flags="wfNoBorder" name="BootlogoSetupScreen" position="0,0" size="1920,1080" title="Info Panel" transparent="0">
     <widget source="Title" render="Label" backgroundColor="background" foregroundColor="TextInfo" font="Regular; 42" halign="left" position="60,25" size="850,50" transparent="1" valign="top" zPosition="1" />
-    <widget name="Mlist" position="25,125" size="900,700" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x92.png" />
+    <widget name="Mlist" position="25,125" size="900,740" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x92.png" />
     <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
     <!-- /*Uhr-->
     <widget backgroundColor="background" font="Regular; 36" halign="center" position="1739,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
@@ -17167,7 +17167,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
   </screen>
   <screen backgroundColor="background" flags="wfNoBorder" name="RadiologoSetupScreen" position="0,0" size="1920,1080" title="Info Panel" transparent="0">
     <widget source="Title" render="Label" backgroundColor="background" foregroundColor="TextInfo" font="Regular; 42" halign="left" position="60,25" size="850,50" transparent="1" valign="top" zPosition="1" />
-    <widget name="Mlist" position="25,125" size="900,700" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x92.png" />
+    <widget name="Mlist" position="25,125" size="900,740" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x92.png" />
     <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
     <!-- /*Uhr-->
     <widget backgroundColor="background" font="Regular; 36" halign="center" position="1739,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
