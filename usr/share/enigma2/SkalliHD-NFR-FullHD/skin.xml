@@ -1879,47 +1879,47 @@
     </widget>
     <!--Uhrzeit/Datum */-->
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/extensions/IBepgR.png" position="1047,929" size="90,60" zPosition="10" />
-    <widget backgroundColor="background" font="Regular; 38" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=2500,always=0" position="290,930" render="MetrixHDRunningText" size="800,60" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
+    <widget backgroundColor="background" font="Regular; 42" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=2500,always=0" position="290,930" render="MetrixHDRunningText" size="800,60" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
       <convert type="ServiceName">Name</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/extensions/movieplayerlogo.png" position="55,930" size="150,70" zPosition="2" />
-    <widget backgroundColor="background" font="Regular; 22" halign="left" position="844,1028" render="Label" size="80,25" source="session.CurrentService" transparent="1" valign="top" zPosition="1" foregroundColor="Text2">
+    <widget backgroundColor="background" font="Regular; 25" halign="left" position="869,1028" render="Label" size="80,27" source="session.CurrentService" transparent="1" valign="top" zPosition="1" foregroundColor="Text2">
       <convert type="ServicePosition">Length</convert>
     </widget>
-    <eLabel backgroundColor="background" font="Regular; 22" halign="right" position="912,1028" size="50,25" text="min" transparent="1" valign="top" zPosition="1" foregroundColor="Text2" />
-    <eLabel backgroundColor="background" font="Regular; 22" foregroundColor="Text2" halign="center" noWrap="1" position="796,1028" size="45,25" text="von" transparent="1" valign="top" zPosition="1" />
-    <widget backgroundColor="background" font="Regular; 22" halign="right" position="692,1028" render="Label" shadowColor="Background" shadowOffset="-1,-1" size="100,25" source="session.CurrentService" transparent="1" valign="top" zPosition="1" foregroundColor="Text2">
+    <eLabel backgroundColor="background" font="Regular; 25" halign="right" position="950,1028" size="55,27" text="min" transparent="1" valign="top" zPosition="1" foregroundColor="Text2" />
+    <eLabel backgroundColor="background" font="Regular; 25" foregroundColor="Text2" halign="center" noWrap="1" position="816,1028" size="55,27" text="von" transparent="1" valign="top" zPosition="1" />
+    <widget backgroundColor="background" font="Regular; 25" halign="right" position="717,1028" render="Label" shadowColor="Background" shadowOffset="-1,-1" size="100,27" source="session.CurrentService" transparent="1" valign="top" zPosition="1" foregroundColor="Text2">
       <convert type="ServicePosition">Position</convert>
     </widget>
     <widget backgroundColor="Background" foregroundColor="lightyellow" font="Regular; 24" halign="right" position="1185,940" render="Label" size="120,30" source="session.CurrentService" transparent="1" valign="bottom" zPosition="1">
       <convert type="SkalliServicePosition">Remaining,ShowNoSeconds</convert>
     </widget>
     <!-- /* AudioIcons   -->
-    <widget backgroundColor="background" font="Regular; 20" halign="right" position="745,879" render="Label" size="55,25" source="session.CurrentService" transparent="1" foregroundColor="Text2" valign="top">
+    <widget backgroundColor="background" font="Regular; 25" halign="right" position="745,879" render="Label" size="90,27" source="session.CurrentService" transparent="1" foregroundColor="Text2" valign="top">
       <convert type="SkalliServiceInfoEX">xres</convert>
     </widget>
-    <eLabel backgroundColor="background" font="Regular; 20" halign="center" position="800,879" size="15,25" text="x" transparent="1" foregroundColor="Text2" valign="top" />
-    <widget backgroundColor="background" font="Regular; 20" halign="left" position="815,879" render="Label" size="70,25" source="session.CurrentService" transparent="1" foregroundColor="Text2" valign="top">
+    <eLabel backgroundColor="background" font="Regular; 23" halign="center" position="835,879" size="15,25" text="x" transparent="1" foregroundColor="Text2" valign="top" />
+    <widget backgroundColor="background" font="Regular; 25" halign="left" position="850,879" render="Label" size="80,27" source="session.CurrentService" transparent="1" foregroundColor="Text2" valign="top">
       <convert type="SkalliServiceInfoEX">yres</convert>
     </widget>
     <widget foregroundColor="lightblue" backgroundColor="BarBack" position="290,996" render="Progress" size="1015,7" source="session.CurrentService" zPosition="10">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1262,1028" size="65,25" font="Regular; 22" halign="left" valign="top" backgroundColor="background" transparent="1" zPosition="1" text="13:45" foregroundColor="Text2">
+    <widget source="session.CurrentService" render="Label" position="1262,1028" size="75,27" font="Regular; 25" halign="left" valign="top" backgroundColor="background" transparent="1" zPosition="1" text="13:45" foregroundColor="Text2">
       <convert type="SkalliServiceEndTime">EndTime</convert>
     </widget>
     <!-- test moviestarttime -->
-    <widget source="session.CurrentService" render="Label" position="380,1028" size="65,25" font="Regular; 22" halign="left" valign="top" backgroundColor="background" transparent="1" zPosition="1" text="13:45" foregroundColor="Text2">
+    <widget source="session.CurrentService" render="Label" position="395,1028" size="75,27" font="Regular; 25" halign="left" valign="top" backgroundColor="background" transparent="1" zPosition="1" text="13:45" foregroundColor="Text2">
       <convert type="SkalliServiceStartTime">StartTime</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="435,879" zPosition="4" size="300,25" valign="top" halign="right" font="Regular; 20" transparent="1" backgroundColor="background" foregroundColor="Text2">
+    <widget source="session.CurrentService" render="Label" position="435,879" zPosition="4" size="300,27" valign="top" halign="right" font="Regular; 25" transparent="1" backgroundColor="background" foregroundColor="Text2">
       <convert type="SkalliServiceInfoEX">avtype</convert>
     </widget>
-    <eLabel name="new eLabel" position="1127,1028" size="135,25" text="Laufzeit bis:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 22" halign="left" zPosition="1" valign="top" />
-    <eLabel name="new eLabel" position="280,1028" size="100,25" text="Startzeit:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 22" halign="left" zPosition="1" valign="top" />
-    <eLabel name="new eLabel" position="1328,1028" size="50,25" text="Uhr" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 22" halign="left" zPosition="1" valign="top" />
-    <eLabel name="new eLabel" position="445,1028" size="45,25" text="Uhr" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 22" halign="left" zPosition="1" valign="top" />
-    <eLabel name="new eLabel" position="625,1028" size="95,25" text="Laufzeit:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 22" halign="left" zPosition="1" valign="top" />
+    <eLabel name="new eLabel" position="1112,1028" size="150,27" text="Laufzeit bis:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 25" halign="left" zPosition="1" valign="top" />
+    <eLabel name="new eLabel" position="280,1028" size="115,27" text="Startzeit:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 25" halign="left" zPosition="1" valign="top" />
+    <eLabel name="new eLabel" position="1338,1028" size="50,27" text="Uhr" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 25" halign="left" zPosition="1" valign="top" />
+    <eLabel name="new eLabel" position="470,1028" size="50,27" text="Uhr" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 25" halign="left" zPosition="1" valign="top" />
+    <eLabel name="new eLabel" position="610,1028" size="110,27" text="Laufzeit:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 25" halign="left" zPosition="1" valign="top" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="SkalliHD-NFR-FullHD/icons/ico_subtitle_on.png" position="1175,872" size="75,35" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
@@ -8594,8 +8594,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EMCMediaCenter" position="0,0" size="1920,1080" title="InfoBar">
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/extensions/BIB.png" position="0,855" size="1920,225" zPosition="-10" />
-    <widget name="Cover" position="24,516" size="212,320" zPosition="2" alphatest="blend" />
-    <ePixmap pixmap="SkalliHD-NFR-FullHD/extensions/no_cover.png" position="12,473" size="240,380" zPosition="1" alphatest="blend" />
+    <widget name="Cover" position="9,691" size="246,370" zPosition="5" alphatest="blend" />
     <!-- /* Uhrzeit/Datum -->
     <widget backgroundColor="background" font="Regular; 46" halign="center" position="1693,941" render="Label" size="75,65" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
       <convert type="ClockToText">Format:%H</convert>
@@ -8632,35 +8631,35 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     </widget>
     <!-- test moviestarttime -->
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/extensions/movieplayerlogo.png" position="55,930" size="150,70" zPosition="2" />
-    <widget source="session.CurrentService" render="Label" position="435,879" zPosition="4" size="300,25" valign="top" halign="right" font="Regular; 20" transparent="1" backgroundColor="background" foregroundColor="Text2">
+    <widget source="session.CurrentService" render="Label" position="435,879" zPosition="4" size="300,27" valign="top" halign="right" font="Regular; 25" transparent="1" backgroundColor="background" foregroundColor="Text2">
       <convert type="SkalliServiceInfoEX">avtype</convert>
     </widget>
-    <widget backgroundColor="background" font="Regular; 20" halign="right" position="745,879" render="Label" size="55,25" source="session.CurrentService" transparent="1" foregroundColor="Text2" valign="top">
+    <widget backgroundColor="background" font="Regular; 25" halign="right" position="745,879" render="Label" size="90,27" source="session.CurrentService" transparent="1" foregroundColor="Text2" valign="top">
       <convert type="SkalliServiceInfoEX">xres</convert>
     </widget>
-    <eLabel backgroundColor="background" font="Regular; 20" halign="center" position="800,879" size="15,25" text="x" transparent="1" foregroundColor="Text2" valign="top" />
-    <widget backgroundColor="background" font="Regular; 20" halign="left" position="815,879" render="Label" size="70,25" source="session.CurrentService" transparent="1" foregroundColor="Text2" valign="top">
+    <eLabel backgroundColor="background" font="Regular; 23" halign="center" position="835,879" size="15,25" text="x" transparent="1" foregroundColor="Text2" valign="top" />
+    <widget backgroundColor="background" font="Regular; 25" halign="left" position="850,879" render="Label" size="80,27" source="session.CurrentService" transparent="1" foregroundColor="Text2" valign="top">
       <convert type="SkalliServiceInfoEX">yres</convert>
     </widget>
-    <eLabel name="new eLabel" position="280,1028" size="100,25" text="Startzeit:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 22" halign="left" zPosition="1" valign="top" />
-    <widget source="session.CurrentService" render="Label" position="380,1028" size="65,25" font="Regular; 22" halign="left" valign="top" backgroundColor="background" transparent="1" zPosition="1" text="13:45" foregroundColor="Text2">
+    <eLabel name="new eLabel" position="280,1028" size="115,27" text="Startzeit:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 25" halign="left" zPosition="1" valign="top" />
+    <widget source="session.CurrentService" render="Label" position="395,1028" size="75,27" font="Regular; 25" halign="left" valign="top" backgroundColor="background" transparent="1" zPosition="1" text="13:45" foregroundColor="Text2">
       <convert type="SkalliServiceStartTime">StartTime</convert>
     </widget>
-    <eLabel name="new eLabel" position="445,1028" size="45,25" text="Uhr" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 22" halign="left" zPosition="1" valign="top" />
-    <eLabel name="new eLabel" position="625,1028" size="95,25" text="Laufzeit:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 22" halign="left" zPosition="1" valign="top" />
-    <widget backgroundColor="background" font="Regular; 22" halign="right" position="692,1028" render="Label" shadowColor="Background" shadowOffset="-1,-1" size="100,25" source="session.CurrentService" transparent="1" valign="top" zPosition="1" foregroundColor="Text2">
+    <eLabel name="new eLabel" position="470,1028" size="50,27" text="Uhr" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 25" halign="left" zPosition="1" valign="top" />
+    <eLabel name="new eLabel" position="610,1028" size="110,27" text="Laufzeit:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 25" halign="left" zPosition="1" valign="top" />
+    <widget backgroundColor="background" font="Regular; 25" halign="right" position="717,1028" render="Label" shadowColor="Background" shadowOffset="-1,-1" size="100,27" source="session.CurrentService" transparent="1" valign="top" zPosition="1" foregroundColor="Text2">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <eLabel backgroundColor="background" font="Regular; 22" foregroundColor="Text2" halign="center" noWrap="1" position="796,1028" size="45,25" text="von" transparent="1" valign="top" zPosition="1" />
-    <widget backgroundColor="background" font="Regular; 22" halign="left" position="844,1028" render="Label" size="80,25" source="session.CurrentService" transparent="1" valign="top" zPosition="1" foregroundColor="Text2">
+    <eLabel backgroundColor="background" font="Regular; 25" foregroundColor="Text2" halign="center" noWrap="1" position="816,1028" size="55,27" text="von" transparent="1" valign="top" zPosition="1" />
+    <widget backgroundColor="background" font="Regular; 25" halign="left" position="869,1028" render="Label" size="80,27" source="session.CurrentService" transparent="1" valign="top" zPosition="1" foregroundColor="Text2">
       <convert type="ServicePosition">Length</convert>
     </widget>
-    <eLabel backgroundColor="background" font="Regular; 22" halign="right" position="912,1028" size="50,25" text="min" transparent="1" valign="top" zPosition="1" foregroundColor="Text2" />
-    <eLabel name="new eLabel" position="1127,1028" size="135,25" text="Laufzeit bis:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 22" halign="left" zPosition="1" valign="top" />
-    <widget source="session.CurrentService" render="Label" position="1262,1028" size="65,25" font="Regular; 22" halign="left" valign="top" backgroundColor="background" transparent="1" zPosition="1" text="13:45" foregroundColor="Text2">
+    <eLabel backgroundColor="background" font="Regular; 25" halign="right" position="950,1028" size="55,27" text="min" transparent="1" valign="top" zPosition="1" foregroundColor="Text2" />
+    <eLabel name="new eLabel" position="1112,1028" size="150,27" text="Laufzeit bis:" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 25" halign="left" zPosition="1" valign="top" />
+    <widget source="session.CurrentService" render="Label" position="1262,1028" size="75,27" font="Regular; 25" halign="left" valign="top" backgroundColor="background" transparent="1" zPosition="1" text="13:45" foregroundColor="Text2">
       <convert type="SkalliServiceEndTime">EndTime</convert>
     </widget>
-    <eLabel name="new eLabel" position="1328,1028" size="50,25" text="Uhr" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 22" halign="left" zPosition="1" valign="top" />
+    <eLabel name="new eLabel" position="1338,1028" size="50,27" text="Uhr" foregroundColor="Text2" backgroundColor="background" transparent="1" font="Regular; 25" halign="left" zPosition="1" valign="top" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_rec_off.png" position="1095,872" size="75,35" zPosition="2" />
     <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_rec_on.png" position="1095,872" render="Pixmap" size="75,35" source="session.RecordState" zPosition="5">
       <convert type="ConditionalShowHide">Blink</convert>
