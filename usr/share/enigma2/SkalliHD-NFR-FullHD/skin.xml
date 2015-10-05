@@ -8449,10 +8449,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
       <convert type="ClockToText">Format:%A</convert>
     </widget>
     <!--Uhr */-->
-    <ePixmap pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="60,804" size="800,2" zPosition="1" />
+    <ePixmap pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="110,819" size="800,2" zPosition="1" />
     <widget backgroundColor="background" font="Regular; 42" position="60,25" size="850,50" foregroundColor="foreground" halign="left" render="Label" source="Title" transparent="1" />
-    <widget scrollbarWidth="4" scrollbarSliderForegroundColor="foreground" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderColor="foreground" scrollbarSliderBorderWidth="1" backgroundColor="background" enableWrapAround="1" name="config" font="Regular;26" itemHeight="30" position="20,125" scrollbarMode="showOnDemand" size="900,670" transparent="1" />
-    <widget backgroundColor="background" font="Regular;28" foregroundColor="lightyellow" halign="center" position="20,815" render="Label" size="900,150" source="help" transparent="1" />
+    <widget scrollbarWidth="4" scrollbarSliderForegroundColor="foreground" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderColor="foreground" scrollbarSliderBorderWidth="1" backgroundColor="background" enableWrapAround="1" name="config" font="Regular;26" itemHeight="30" position="20,125" scrollbarMode="showOnDemand" size="1000,690" transparent="1" />
+    <widget backgroundColor="background" font="Regular;28" foregroundColor="lightyellow" halign="center" position="20,825" render="Label" size="1000,150" source="help" transparent="1" />
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_red.png" position="20,1020" size="35,35" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_green.png" position="306,1020" size="35,35" />
@@ -8538,35 +8538,35 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
       <convert type="ClockToText">Format:%A</convert>
     </widget>
     <!--Uhr */-->
-    <widget name="list" position="40,195" size="1080,520" itemHeight="40" CoolFont="Regular;26" CoolSelectFont="Regular;26" CoolDateFont="Regular;26" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="550" CoolTitleColor="0" CoolDatePos="900" CoolDateWidth="180" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="750" CoolBarPos="640" CoolBarHPos="10" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="Text1" UnwatchedColor="#00ffffff" WatchingColor="#00bab329" FinishedColor="#0065C416" RecordingColor="#00f23d21" BackColorSel="Selection" backgroundColor="Background1" foregroundColorSelected="Foreground" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="1" enableWrapAround="1" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1880x55.png" transparent="1" />
+    <widget name="list" position="40,195" size="1080,520" itemHeight="40" CoolFont="Regular;26" CoolSelectFont="Regular;30" CoolDateFont="Regular;26" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="550" CoolTitleColor="0" CoolDatePos="900" CoolDateWidth="180" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="750" CoolBarPos="640" CoolBarHPos="10" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="Text1" UnwatchedColor="#00ffffff" WatchingColor="#00bab329" FinishedColor="#0065C416" RecordingColor="#00f23d21" BackColorSel="Selection" backgroundColor="Background1" foregroundColorSelected="Foreground" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="1" enableWrapAround="1" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1880x55.png" transparent="1" />
     <widget name="wait" position="172,479" size="792,100" zPosition="10" font="Regular; 32" foregroundColor="Text1" backgroundColor="Background" halign="center" valign="center" />
-    <widget source="Service" render="Label" position="1652,125" size="90,35" font="Regular; 26" halign="left" foregroundColor="Text1" backgroundColor="Background" transparent="1" text="02:10">
+    <widget source="Service" render="Label" position="1200,620" size="90,35" font="Regular; 26" halign="left" foregroundColor="Text1" backgroundColor="Background" transparent="1" text="02:10">
       <convert type="EMCServiceTime">StartTime</convert>
       <convert type="EMCClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Service" render="Label" position="1722,125" size="90,35" font="Regular; 26" foregroundColor="Text1" backgroundColor="Background" transparent="1" text="-03:30">
+    <widget source="Service" render="Label" position="1272,620" size="90,35" font="Regular; 26" foregroundColor="Text1" backgroundColor="Background" transparent="1" text="-03:30">
       <convert type="EMCServiceTime">EndTime</convert>
       <convert type="EMCClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Service" render="Label" position="1246,235" size="120,33" font="Regular; 25" halign="left" foregroundColor="Text1" backgroundColor="Background" transparent="1" text="126 min" zPosition="2">
+    <widget source="Service" render="Label" position="1675,620" size="135,33" font="Regular; 26" halign="left" foregroundColor="Text1" backgroundColor="Background" transparent="1" text="126 min" zPosition="2">
       <convert type="EMCServiceTime">Duration</convert>
       <convert type="EMCClockToText">InMinutes</convert>
     </widget>
-    <widget source="Service" render="Label" position="1652,235" size="110,33" font="Regular; 25" halign="right" backgroundColor="Background" transparent="1" text="8956 MB" foregroundColor="Text1">
+    <widget source="Service" render="Label" position="1675,675" size="135,33" font="Regular; 24" halign="left" backgroundColor="Background" transparent="1" text="8956 MB" foregroundColor="Text1">
       <convert type="EMCMovieInfo">FileSize</convert>
     </widget>
     <widget source="Service" render="MetrixHDRunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,always=0,startdelay=10000,wrap" position="40,720" size="1840,250" font="Regular; 28" foregroundColor="lightyellow" backgroundColor="background" transparent="1" halign="left" valign="top">
       <convert type="EMCEventName">ExtendedDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="1196,125" size="450,35" font="Regular; 26" foregroundColor="Text1" halign="left" backgroundColor="Background" transparent="1" text="Donnerstag September 28, 2013">
+    <widget source="Service" render="Label" position="1195,675" size="450,35" font="Regular; 24" foregroundColor="Text1" halign="left" backgroundColor="Background" transparent="1" text="Donnerstag September 28, 2013">
       <convert type="EMCServiceTime">StartTime</convert>
       <convert type="EMCClockToText">Date</convert>
     </widget>
-    <widget source="Service" render="Label" position="40,125" size="1080,45" font="Regular; 36" foregroundColor="lightblue" backgroundColor="Background" halign="left" transparent="1" valign="center" text="Die Geschichte des Menschen - 70.000 Jahre Überleben, Erobern, Kämpfen, Teil 2">
+    <widget source="Title" render="Label" position="40,125" size="1080,40" font="Regular; 32" foregroundColor="lightblue" backgroundColor="Background" halign="left" transparent="1" />
+    <widget name="Cover" position="1371,187" size="292,440" zPosition="1" alphatest="on" />
+    <widget source="Service" render="Label" position="1135,103" size="775,80" font="Regular; 35" foregroundColor="lightblue" backgroundColor="Background" halign="center" transparent="1" valign="center">
       <convert type="EMCEventName">Name</convert>
     </widget>
-    <widget name="Cover" position="1371,280" size="279,420" zPosition="1" alphatest="on" />
-    <widget source="Title" render="Label" position="1270,178" size="555,35" font="Regular; 26" foregroundColor="Text1" backgroundColor="background" transparent="1" halign="right" />
     <!-- /*Buttons-->
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_red.png" position="20,1020" size="35,35" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_green.png" position="306,1020" size="35,35" />
@@ -17257,13 +17257,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     <!-- /*TV-Bild mit Rahmen groß-->
     <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line8.png" position="25,428" size="700, 2" />
     <!-- /*Buttons-->
+    <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_red.png" position="20,1020" size="35,35" />
+    <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_green.png" position="306,1020" size="35,35" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_yellow.png" position="590,1020" size="35,35" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_blue.png" position="915,1020" size="35,35" />
+    <widget backgroundColor="background" font="Regular; 30" halign="left" render="Label" source="key_red" position="60,1020" size="240,35" transparent="1" zPosition="1" valign="top" />
+    <widget backgroundColor="background" font="Regular; 30" halign="left" render="Label" source="key_green" position="345,1020" size="240,35" transparent="1" zPosition="1" valign="top" />
     <widget backgroundColor="background" font="Regular; 30" halign="left" render="Label" source="key_yellow" position="630,1020" size="280,35" transparent="1" zPosition="1" valign="top" />
     <widget backgroundColor="background" font="Regular; 30" halign="left" render="Label" source="key_blue" position="955,1020" size="280,35" transparent="1" zPosition="1" valign="top" />
     <ePixmap name="Button" pixmap="SkalliHD-NFR-FullHD/buttons/key_leftright.png" position="1620,1020" size="100,35" alphatest="blend" transparent="0" />
     <ePixmap name="Button" pixmap="SkalliHD-NFR-FullHD/buttons/key_updown.png" position="1745,1020" size="100,35" transparent="0" alphatest="blend" />
-    <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/buttons/key_ok.png" position="20,1020" size="100,35" transparent="0" alphatest="blend" />
     <!--Buttons */-->
   </screen>
   <screen name="MoveVideos_int" position="0,0" size="1920,1080" title="Move Bootvideos back to Flash" flags="wfNoBorder">
