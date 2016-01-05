@@ -17515,5 +17515,50 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     <eLabel text="www.nachtfalke.biz" backgroundColor="background" position="254,140" size="350,50" font="Regular; 25" halign="center" />
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/infopanel1.png" position="30,27" size="256,256" transparent="1" zPosition="5" />
   </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="QuickMenuDevices" position="0,0" size="1920,1080" title="Devices">
+    <eLabel backgroundColor="black" foregroundColor="Text1" name="" position="0,0" size="1920,1080" zPosition="-10" />
+    <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
+    <widget font="Regular; 42" position="60,25" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="left" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget enableWrapAround="1" position="25,205" source="devicelist" render="Listbox" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="800,540" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x92.png" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+				 MultiContentEntryText(pos = (90, 0), size = (600, 30), font=0, text = 0),
+				 MultiContentEntryText(pos = (110, 30), size = (600, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+				 MultiContentEntryPixmapAlphaBlend(pos = (5, 8), size = (80, 80), png = 2),
+				],
+				"fonts": [gFont("Regular",26),gFont("Regular",22)],
+				"itemHeight": 85
+				}</convert>
+    </widget>
+    <!-- /*Uhr-->
+    <widget backgroundColor="background" font="Regular; 36" halign="center" position="1739,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 36" halign="center" position="1786,18" size="15,40" text=":" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1" />
+    <widget backgroundColor="background" font="Regular; 36" halign="center" position="1793,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 25" halign="center" position="1848,20" size="10,25" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="Text1" />
+    <widget backgroundColor="background" font="Regular; 24" halign="center" position="1855,20" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget>
+    <widget backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="left" position="1520,25" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%d. %B</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="left" noWrap="1" position="1511,25" size="10,40" text=", " transparent="1" valign="top" zPosition="5" />
+    <widget backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="right" position="1305,25" render="Label" size="200,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <!--Uhr */-->
+    <eLabel text="Detected Devices:" position="25,125" size="800,40" zPosition="10" font="Regular;32" halign="left" transparent="1" backgroundColor="background" foregroundColor="lightblue" />
+    <widget name="lab1" zPosition="2" position="75,205" size="700,40" font="Regular;30" backgroundColor="background" halign="center" transparent="1" />
+    <!--TV-Bild mit Rahmen groß */-->
+    <widget source="session.VideoPicture" render="Pig" position="1040,180" zPosition="3" size="800,450" backgroundColor="picture" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,175" size="800, 2" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,633" size="800, 2" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line4.png" position="1035,180" size="2, 450" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line4.png" position="1842,180" size="2, 450" />
+    <!-- /*TV-Bild mit Rahmen groß-->
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line8.png" position="75,185" size="700, 2" />
+  </screen>
 </skin>
 
