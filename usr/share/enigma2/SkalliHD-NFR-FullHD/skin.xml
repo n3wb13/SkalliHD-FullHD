@@ -17296,51 +17296,51 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     <widget backgroundColor="background" font="Regular; 30" halign="left" source="key_yellow" render="Label" position="630,1020" size="240,35" transparent="1" zPosition="1" valign="top" />
     <!--Buttons */-->
   </screen>
-<screen backgroundColor="background" flags="wfNoBorder" name="IPTV" position="0,0" size="1920,1080" title="M3U Converter" transparent="0">
-  <widget source="Title" render="Label" backgroundColor="background" foregroundColor="TextInfo" font="Regular; 42" halign="left" position="60,25" size="850,50" transparent="1" valign="top" zPosition="1" />
-  <widget name="IPTVList" itemHeight="35" font="Regular;28" position="25,125" size="900,740" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x92.png" />
-  <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
-  <!-- /*Uhr-->
-  <widget backgroundColor="background" font="Regular; 36" halign="center" position="1739,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
-    <convert type="ClockToText">Format:%H</convert>
-  </widget>
-  <eLabel backgroundColor="background" font="Regular; 36" halign="center" position="1786,18" size="15,40" text=":" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1" />
-  <widget backgroundColor="background" font="Regular; 36" halign="center" position="1793,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
-    <convert type="ClockToText">Format:%M</convert>
-  </widget>
-  <eLabel backgroundColor="background" font="Regular; 25" halign="center" position="1848,20" size="10,25" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="Text1" />
-  <widget backgroundColor="background" font="Regular; 24" halign="center" position="1855,20" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
-    <convert type="ClockToText">Format:%S</convert>
-  </widget>
-  <widget backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="left" position="1520,25" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%d. %B</convert>
-  </widget>
-  <eLabel backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="left" noWrap="1" position="1511,25" size="10,40" text=", " transparent="1" valign="top" zPosition="5" />
-  <widget backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="right" position="1305,25" render="Label" size="200,40" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%A</convert>
-  </widget>
-  <!--Uhr */-->
-  <!--TV-Bild mit Rahmen groß */-->
-  <widget source="session.VideoPicture" render="Pig" position="1040,180" zPosition="3" size="800,450" backgroundColor="picture" />
-  <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,175" size="800, 2" />
-  <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,633" size="800, 2" />
-  <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line4.png" position="1035,180" size="2, 450" />
-  <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line4.png" position="1842,180" size="2, 450" />
-  <!-- /*TV-Bild mit Rahmen groß-->
-  <widget name="text1" position="25,900" size="900,40" font="Regular;28" transparent="0" foregroundColor="lightyellow" halign="left" backgroundColor="background" />
-  <!-- /*Buttons-->
+  <screen backgroundColor="background" flags="wfNoBorder" name="IPTV" position="0,0" size="1920,1080" title="M3U Converter" transparent="0">
+    <widget source="Title" render="Label" backgroundColor="background" foregroundColor="TextInfo" font="Regular; 42" halign="left" position="60,25" size="850,50" transparent="1" valign="top" zPosition="1" />
+    <widget name="IPTVList" itemHeight="35" font="Regular;28" position="25,125" size="900,740" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x92.png" />
+    <ePixmap name="new ePixmap" pixmap="SkalliHD-NFR-FullHD/extensions/back.png" position="0,0" size="1920,1080" transparent="0" zPosition="-5" />
+    <!-- /*Uhr-->
+    <widget backgroundColor="background" font="Regular; 36" halign="center" position="1739,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 36" halign="center" position="1786,18" size="15,40" text=":" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1" />
+    <widget backgroundColor="background" font="Regular; 36" halign="center" position="1793,18" render="Label" size="55,40" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 25" halign="center" position="1848,20" size="10,25" text=":" transparent="1" valign="center" zPosition="1" foregroundColor="Text1" />
+    <widget backgroundColor="background" font="Regular; 24" halign="center" position="1855,20" render="Label" size="40,30" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="1" foregroundColor="Text1">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget>
+    <widget backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="left" position="1520,25" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%d. %B</convert>
+    </widget>
+    <eLabel backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="left" noWrap="1" position="1511,25" size="10,40" text=", " transparent="1" valign="top" zPosition="5" />
+    <widget backgroundColor="background" font="Regular; 32" foregroundColor="Text1" halign="right" position="1305,25" render="Label" size="200,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <!--Uhr */-->
+    <!--TV-Bild mit Rahmen groÃŸ */-->
+    <widget source="session.VideoPicture" render="Pig" position="1040,180" zPosition="3" size="800,450" backgroundColor="picture" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,175" size="800, 2" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line3.png" position="1040,633" size="800, 2" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line4.png" position="1035,180" size="2, 450" />
+    <ePixmap name="line" pixmap="SkalliHD-NFR-FullHD/icons/line4.png" position="1842,180" size="2, 450" />
+    <!-- /*TV-Bild mit Rahmen groÃŸ-->
+    <widget name="text1" position="25,900" size="900,40" font="Regular;28" transparent="0" foregroundColor="lightyellow" halign="left" backgroundColor="background" />
+    <!-- /*Buttons-->
   <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_red.png" position="20,1020" size="35,35" />
-  <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_green.png" position="305,1020" size="35,35" />
-  <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_yellow.png" position="590,1020" size="35,35" />
-  <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_blue.png" position="915,1020" size="35,35" />
-  <widget backgroundColor="background" font="Regular; 30" halign="left" name="key_red" position="60,1020" size="240,35" transparent="1" zPosition="1" valign="top" />
-  <widget backgroundColor="background" font="Regular; 30" halign="left" name="key_green" position="345,1020" size="240,35" transparent="1" zPosition="1" valign="top" />
-  <widget backgroundColor="background" font="Regular; 30" halign="left" name="key_yellow" position="630,1020" size="280,35" transparent="1" zPosition="1" valign="top" />
-  <widget backgroundColor="background" font="Regular; 30" halign="left" name="key_blue" position="955,1020" size="280,35" transparent="1" zPosition="1" valign="top" />
+  <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_green.png" position="345,1020" size="35,35" />
+  <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_yellow.png" position="670,1020" size="35,35" />
+  <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/buttons/key_blue.png" position="995,1020" size="35,35" />
+  <widget backgroundColor="background" font="Regular; 30" halign="left" name="key_red" position="60,1020" size="280,35" transparent="1" zPosition="1" valign="top" />
+  <widget backgroundColor="background" font="Regular; 30" halign="left" name="key_green" position="385,1020" size="280,35" transparent="1" zPosition="1" valign="top" />
+  <widget backgroundColor="background" font="Regular; 30" halign="left" name="key_yellow" position="710,1020" size="280,35" transparent="1" zPosition="1" valign="top" />
+  <widget backgroundColor="background" font="Regular; 30" halign="left" name="key_blue" position="1035,1020" size="280,35" transparent="1" zPosition="1" valign="top" />
   <ePixmap name="Button" pixmap="SkalliHD-NFR-FullHD/buttons/key_leftright.png" position="1620,1020" size="100,35" alphatest="blend" transparent="0" />
   <ePixmap name="Button" pixmap="SkalliHD-NFR-FullHD/buttons/key_updown.png" position="1745,1020" size="100,35" transparent="0" alphatest="blend" />
-  <!--Buttons */-->
-</screen>
+    <!--Buttons */-->
+  </screen>
   <screen backgroundColor="background" flags="wfNoBorder" name="NfrHD_Config" position="0,0" size="1920,1080" title="NfrHD Setup" transparent="0">
     <widget source="Title" render="Label" backgroundColor="background" foregroundColor="TextInfo" font="Regular; 42" halign="left" position="60,25" size="850,50" transparent="1" valign="top" zPosition="1" />
     <widget itemHeight="35" name="config" font="Regular;28" position="25,125" size="900,740" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x92.png" />
