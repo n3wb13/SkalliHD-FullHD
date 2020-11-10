@@ -103,7 +103,7 @@ class MyCaidDisplay(Poll, Converter, object):
 						prov = "Prov: %s" % prov
 						# reader
 						reader = ecm_info.get("reader", None)
-					        reader = "Reader: %s" % reader
+						reader = "Reader: %s" % reader
 						# ecm time	
 						ecm_time = ecm_info.get("ecm time", None)
 						if ecm_time:

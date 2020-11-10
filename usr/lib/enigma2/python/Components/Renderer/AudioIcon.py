@@ -1,6 +1,8 @@
-from Renderer import Renderer
+from __future__ import absolute_import
+from Components.Renderer.Renderer import Renderer
 from enigma import ePixmap
 from Tools.Directories import fileExists, SCOPE_CURRENT_SKIN, resolveFilename
+import os
 
 class AudioIcon(Renderer):
 	searchPaths = (resolveFilename(SCOPE_CURRENT_SKIN), '/usr/share/enigma2/skin_default/')
@@ -60,4 +62,3 @@ class AudioIcon(Renderer):
 			if fileExists(pngname):
 				return pngname
 		return ""
-

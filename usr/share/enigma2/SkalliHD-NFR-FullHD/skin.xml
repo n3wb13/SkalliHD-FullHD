@@ -292,9 +292,7 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <!--  Icon Bar */  -->
-    <widget font="Regular; 32" foregroundColor="Text1" halign="left" position="265,870" render="Label" size="80,40" source="session.CurrentService" text="1234" transparent="1" valign="top" zPosition="1" backgroundColor="background">
-      <convert type="MetrixHDExtServiceInfo">ServiceNumber</convert>
-    </widget>
+
     <widget source="session.Event_Next" render="Label" position="1205,1026" size="90,40" font="Regular; 30" halign="left" foregroundColor="Text1" backgroundColor="background" transparent="1" zPosition="2" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
@@ -306,6 +304,9 @@
     </widget>
     <widget source="session.CurrentService" render="AudioIcon" path="icons" position="1295,872" zPosition="3" size="75,35" alphatest="blend">
       <convert type="VAudioInfo">AudioIcon</convert>
+    </widget>
+	<widget font="Regular; 32" foregroundColor="Text1" halign="left" position="265,870" render="Label" size="80,40" source="session.CurrentService" text="1234" transparent="1" valign="top" zPosition="1" backgroundColor="background">
+      <convert type="MetrixHDExtServiceInfo">ServiceNumber</convert>
     </widget>
     <!-- /* SNR -->
     <eLabel backgroundColor="background" font="Regular; 24" foregroundColor="Text1" halign="left" noWrap="1" position="1482,970" size="60,35" text="SNR :" transparent="1" valign="top" zPosition="5" />
@@ -320,18 +321,38 @@
     <eLabel backgroundColor="background" font="Regular; 24" foregroundColor="Text1" halign="left" noWrap="1" position="1482,937" size="60,35" text="AGC :" transparent="1" valign="top" zPosition="5" />
     <!-- AGC */ -->
     <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_off.png" position="1375,872" size="75,35" render="Pixmap" source="session.CurrentService" zPosition="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">0,1279</convert>
+      <convert type="ServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">0,719</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_1080.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">1080,1080</convert>
+      <convert type="ValueRange">720,1079</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_720.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">720,720</convert>
+      <convert type="ValueRange">720,1080</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">Is4K</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hd_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr10_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hlg_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="SkalliHD-NFR-FullHD/icons/ico_sub_on.png" position="895,872" size="75,35" zPosition="2" alphatest="blend">
@@ -524,9 +545,9 @@
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_off.png" position="475,495" size="75,35" render="Pixmap" source="session.CurrentService" zPosition="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">0,1279</convert>
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_off.png" position="1375,872" size="75,35" render="Pixmap" source="session.CurrentService" zPosition="1">
+      <convert type="ServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">0,719</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_subtitle_off.png" position="315,495" size="75,35" zPosition="1" />
@@ -537,14 +558,34 @@
     <widget source="session.CurrentService" render="AudioIcon" path="icons" position="395,495" zPosition="3" size="75,35" alphatest="blend">
       <convert type="VAudioInfo">AudioIcon</convert>
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_720.png" position="475,495" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_720.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">720,720</convert>
+      <convert type="ValueRange">720,1080</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_1080.png" position="475,495" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_1080.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">1080,1080</convert>
+      <convert type="ValueRange">720,1079</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+		<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">Is4K</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hd_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr10_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hlg_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="SkalliHD-NFR-FullHD/icons/ico_sub_on.png" position="715,495" size="75,35" zPosition="2" alphatest="blend">
@@ -1332,19 +1373,39 @@
     <widget source="session.CurrentService" render="AudioIcon" path="icons" position="1255,872" zPosition="1" size="75,35" alphatest="blend">
       <convert type="VAudioInfo">AudioIcon</convert>
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_720.png" position="1335,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_720.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">720,720</convert>
+      <convert type="ValueRange">720,1080</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_off.png" position="1335,872" size="75,35" render="Pixmap" source="session.CurrentService" zPosition="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">0,1279</convert>
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_off.png" position="1375,872" size="75,35" render="Pixmap" source="session.CurrentService" zPosition="1">
+      <convert type="ServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">0,719</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_1080.png" position="1335,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_1080.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">1080,1080</convert>
+      <convert type="ValueRange">720,1079</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+		<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">Is4K</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hd_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr10_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hlg_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_rec_off.png" position="1095,872" size="75,35" zPosition="2" />
@@ -2284,18 +2345,38 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     <eLabel backgroundColor="background" font="Regular; 22" foregroundColor="Text1" halign="left" noWrap="1" position="1365,1032" size="60,35" text="AGC :" transparent="1" valign="top" zPosition="5" />
     <!-- AGC */ -->
     <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_off.png" position="1375,872" size="75,35" render="Pixmap" source="session.CurrentService" zPosition="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">0,1279</convert>
+      <convert type="ServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">0,719</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_1080.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">1080,1080</convert>
+      <convert type="ValueRange">720,1079</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_720.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">720,720</convert>
+      <convert type="ValueRange">720,1080</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+		<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">Is4K</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hd_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr10_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hlg_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="SkalliHD-NFR-FullHD/icons/ico_sub_on.png" position="895,872" size="75,35" zPosition="2" alphatest="blend">
@@ -4389,19 +4470,39 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     <widget source="session.CurrentService" render="AudioIcon" path="icons" position="1255,872" zPosition="3" size="75,35" alphatest="blend">
       <convert type="VAudioInfo">AudioIcon</convert>
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_off.png" position="1335,872" size="75,35" render="Pixmap" source="session.CurrentService" zPosition="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">0,1279</convert>
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_off.png" position="1375,872" size="75,35" render="Pixmap" source="session.CurrentService" zPosition="1">
+      <convert type="ServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">0,719</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_720.png" position="1335,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_720.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">720,720</convert>
+      <convert type="ValueRange">720,1080</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_1080.png" position="1335,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_1080.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">1080,1080</convert>
+      <convert type="ValueRange">720,1079</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+		<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">Is4K</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hd_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr10_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hlg_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_format_on.png" position="1415,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
@@ -5566,19 +5667,39 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))</ap
     <widget source="session.CurrentService" render="AudioIcon" path="icons" position="1255,872" zPosition="1" size="75,35" alphatest="blend">
       <convert type="VAudioInfo">AudioIcon</convert>
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_720.png" position="1335,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_720.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">720,720</convert>
+      <convert type="ValueRange">720,1080</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_off.png" position="1335,872" size="75,35" render="Pixmap" source="session.CurrentService" zPosition="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">0,1279</convert>
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_off.png" position="1375,872" size="75,35" render="Pixmap" source="session.CurrentService" zPosition="1">
+      <convert type="ServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">0,719</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_1080.png" position="1335,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
+    <widget alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_hd_on_1080.png" position="1375,872" render="Pixmap" size="75,35" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">1080,1080</convert>
+      <convert type="ValueRange">720,1079</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+		<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">Is4K</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hd_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr10_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hlg_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap alphatest="blend" pixmap="SkalliHD-NFR-FullHD/icons/ico_rec_off.png" position="1095,872" size="75,35" zPosition="2" />

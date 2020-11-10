@@ -18,7 +18,7 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 ################################################################################
 
-from Renderer import Renderer
+from Components.Renderer.Renderer import Renderer
 from skin import parseColor, parseFont
 from enigma import eCanvas, eLabel, eTimer, eRect, ePoint, eSize, gRGB, gFont, \
 	RT_HALIGN_LEFT, RT_HALIGN_CENTER, RT_HALIGN_RIGHT, RT_HALIGN_BLOCK, \
@@ -375,5 +375,3 @@ class MetrixHDRunningText(Renderer):
 		
 		self.P += self.mStep
 		self.mTimer.start(timeout,True)
-
-

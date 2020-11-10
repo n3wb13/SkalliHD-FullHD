@@ -61,11 +61,21 @@ class MetrixHDExtServiceInfo(Converter, object):
 			return ""
 
 		text = ""
-		name = info.getName().replace('\xc2\x86', '').replace('\xc2\x87', '')
-		number = self.getServiceNumber(name, info.getInfoString(iServiceInformation.sServiceref))
+		name = info.getName().replace('\xc2\x86', '').replace('\xc2\x87', '').replace('\x86', '').replace('\x87', '')
+		try:
+			service = self.source.serviceref
+			num = service and service.getChannelNum() or None
+		except:
+			num = None
+		if num:
+			number = str(num)
+		else:
+			num = self.getServiceNumber(name, info.getInfoString(iServiceInformation.sServiceref))
+			number = num and str(num) or ''
 		orbital = self.getOrbitalPosition(info)
 		satName = self.satNames.get(orbital, orbital)
 
+		if len(number) > 5: number=''
 		if self.type == self.SERVICENAME:
 			text = name
 		elif self.type == self.SERVICENUMBER:
@@ -115,7 +125,7 @@ class MetrixHDExtServiceInfo(Converter, object):
 			channels = services and services.getContent("SN", True)
 			for channel in channels:
 				if not channel[0].startswith("1:64:"): # Ignore marker
-					list.append(channel[1].replace('\xc2\x86', '').replace('\xc2\x87', ''))
+					list.append(channel[1].replace('\xc2\x86', '').replace('\xc2\x87', '').replace('\x86', '').replace('\x87', ''))
 
 		return list
 
@@ -124,7 +134,10 @@ class MetrixHDExtServiceInfo(Converter, object):
 		self.radio_list = self.getListFromRef(eServiceReference('1:7:2:0:0:0:0:0:0:0:(type == 2) FROM BOUQUET "bouquets.radio" ORDER BY bouquet'))
 
 	def readSatXml(self):
-		satXml = parse("/etc/tuxbox/satellites.xml").getroot()
+		try:
+			satXml = parse("/etc/enigma2/satellites.xml").getroot()
+		except:
+			satXml = parse("/etc/tuxbox/satellites.xml").getroot()
 		if satXml is not None:
 			for sat in satXml.findall("sat"):
 				name = sat.get("name") or None
@@ -147,7 +160,7 @@ class MetrixHDExtServiceInfo(Converter, object):
 			list = self.tv_list
 		number = ""
 		if name in list:
-			for idx in range(1, len(list)):
+			for idx in list(range(1, len(list))):
 				if name == list[idx-1]:
 					number = str(idx)
 					break
@@ -159,7 +172,7 @@ class MetrixHDExtServiceInfo(Converter, object):
 		if transponderData is not None:
 			if isinstance(transponderData, float):
 				return ""
-			if transponderData.has_key("tuner_type"):
+			if "tuner_type" in transponderData:
 				if (transponderData["tuner_type"] == "DVB-S") or (transponderData["tuner_type"] == "DVB-S2"):
 					orbital = transponderData["orbital_position"]
 					orbital = int(orbital)
